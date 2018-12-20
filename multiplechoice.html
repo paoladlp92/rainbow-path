@@ -1,0 +1,342 @@
+<html !DOCTYPE>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SnowFlake Generator</title>
+</head>
+
+<body>
+    <h1>SnowFlake Generator</h1>
+<h2>Help us Combat Global Warming! If we collect enough snowflakes we can create the ultimate SJW SnowStorm that will blow patriarchy away.  </h1>
+
+    <form id=qSex>
+        <p>What is your biological Sex?:</p>
+        <div>
+            <input type="radio" id="sex1" name="Biological Sex:" value="Female">
+            <label for="sex1">a) Female</label>
+
+            <input type="radio" id="sex2" name="Biological Sex:" value="Male">
+            <label for="sex2">b) Male</label>
+
+            <input type="radio" id="sex3" name="Biological Sex:" value="Other">
+            <label for="sex3">c) Other</label>
+        </div>
+        <div>
+            <button type="submit" id="submit1">Submit</button>
+        </div>
+    </form>
+
+    <form id=qGenderId>
+        <p>What is your Gender Identity?:</p>
+        <div>
+            <input type="radio" id="genderId1" name="Gender Identity:" value="Womyn">
+            <label for="genderId1">a) Womyn</label>
+
+            <input type="radio" id="genderId2" name="Gender Identity:" value="Man">
+            <label for="genderId2">b) Man</label>
+
+            <input type="radio" id="genderId3" name="Gender Identity:" value="Other">
+            <label for="genderId3">c) Other</label>
+            <input type="radio" id="genderId4" name="Gender Identity:" value="Changes">
+            <label for="genderId4">c) It fluctuates</label>
+            <input type="radio" id="genderId5" name="Gender Identity:" value="Two">
+            <label for="genderId5">d) I have two genders</label>
+            <input type="radio" id="genderId6" name="Gender Identity:" value="Agender">
+            <label for="genderId6">e) In process of figuring out </label>
+            <input type="radio" id="genderId7" name="Gender Identity:" value="Neutral">
+            <label for="genderId7">e) Nothing in Particular. </label>
+        </div>
+
+    </form>
+    <form id=qSexuality>
+        <p>Who are you sexually attracted to?:</p>
+        <div>
+            <input type="radio" id="sexuality1" name="Sexuality:" value="Womyn">
+            <label for="sexuality1">a) Womyn</label>
+            <input type="radio" id="sexuality2" name="Sexuality:" value="Men">
+            <label for="sexuality2">b) Men</label>
+            <input type="radio" id="sexuality3" name="Sexuality:" value="Both">
+            <label for="sexuality3">c) Both womyn and men</label>
+            <input type="radio" id="sexuality4" name="Sexuality:" value="Non">
+            <label for="sexuality4">D) Non</label>
+            <input type="radio" id="sexuality5" name="Sexuality:" value="Imparcial">
+            <label for="sexuality5">E) People regardless of their gender</label>
+            <input type="radio" id="sexuality6" name="Sexuality:" value="All">
+            <label for="sexuality6">F) All genders can be attractive</label>
+
+
+        </div>
+    </form>
+    <form id=qGenderEx>
+        <p>What is your Gender Expression?:</p>
+        <div>
+            <input type="radio" id="genderEx1" name="Gender Expression:" value="Feminine">
+            <label for="genderEx1">a) Feminine/Femme</label>
+
+            <input type="radio" id="genderEx2" name="Gender Expression:" value="Masculine">
+            <label for="genderEx2">b) Masculine/Masc</label>
+
+            <input type="radio" id="genderEx3" name="Gender Expression:" value="Other">
+            <label for="genderEx3">c) Other</label>
+            <input type="radio" id="genderEx4" name="Gender Expression:" value="Non">
+            <label for="genderEx4">D) Non</label>
+        </div>
+    </form>
+
+    <form id=qFuck>
+            <p>What genital(s) do you preffer for sexual intercourse?:</p>
+            <div>
+                <input type="radio" id="fuckEx1" name="Gender Expression:" value="Vagina">
+                <label for="fuckEx1">a) Vagina</label>
+    
+                <input type="radio" id="fuckEx2" name="Gender Expression:" value="Dick">
+                <label for="fuckEx2">b) Dick</label>
+                <input type="radio" id="fuckEx3" name="Gender Expression:" value="Both">
+                <label for="fuckEx3">D) I like Both (V&D)</label>
+    
+                <input type="radio" id="fuckEx4" name="Gender Expression:" value="Other">
+                <label for="fuckEx4">c) Other</label>
+                <input type="radio" id="fuckEx5" name="Gender Expression:" value="Non">
+                <label for="fuckEx5">D) Don't Care</label>
+            </div>
+        </form>
+
+
+    <script type="text/javascript">
+
+        var form = document.querySelector("form");
+        var sexuality = "";
+        var bioSex = "";
+        var genderEx = "";
+        var genderId = "";
+        var cisTrans = "";
+        var gayStraight = "";
+        var queerEx = "";
+        var fuck = "";
+
+    
+
+         form.addEventListener("submit", function (event) {
+            var data = new FormData(qFuck);
+            var output = "";
+            for (const entry of data) {
+                output = entry[0] + "=" + entry[1] + "\r";
+                var sexuality = entry[1];
+                if (entry[1] === "Vagina") {
+                    var fuck = "Pussy Loving";
+                };
+                if (entry[1] === "Dick") {
+                    var fuck = "Dick Loving";
+                };
+                if (entry[1] === "Other") {
+                    var fuck = "Lover of anything that's not a pussy or dick";
+                };
+                if (entry[1] === "Non") {
+                    var fuck = "";
+                };
+                if (entry[1] === "Both") {
+                    var fuck = "Lover of pussy and dick";
+                };
+                document.getElementById("fuck").innerHTML = fuck;
+            }
+
+       
+            var data = new FormData(qSexuality);
+            var output = "";
+            for (const entry of data) {
+                output = entry[0] + "=" + entry[1] + "\r";
+                var sexuality = entry[1];
+                if (entry[1] === "Feminine People") {
+                    var sexuality = "Feminine";
+                };
+                if (entry[1] === "Masculine People") {
+                    var sexuality = "Masculine";
+                };
+                if (entry[1] === "Other") {
+                    var sexuality = "gender has nothing to do with attraction";
+                };
+                if (entry[1] === "Non") {
+                    var sexuality = "asexual";
+                };
+                document.getElementById("sexuality").innerHTML = sexuality;
+            }
+
+            var data = new FormData(qGenderEx);
+            var output = "";
+            for (const entry of data) {
+                output = entry[0] + "=" + entry[1] + "\r";
+                var genderEx = entry[1];
+                if (entry[1] === "Feminine") {
+                    var genderEx = "Femme";
+
+                };
+                if (entry[1] === "Masculine") {
+                    var genderEx = "Masc";
+                };
+                if (entry[1] === "Other") {
+                    var genderEx = "Androgynous";
+                };
+                if (entry[1] === "Non") {
+                    var genderEx = "Gender-neutral";
+                };
+
+                document.getElementById("genderEx").innerHTML = genderEx;
+            }
+
+            var data = new FormData(qGenderId);
+            var output = "";
+            for (const entry of data) {
+                output = entry[0] + "=" + entry[1] + "\r";
+                var genderId = entry[1];
+                if (entry[1] === "Womyn") {
+                    var genderId = "Womyn";
+                };
+                if (entry[1] === "Man") {
+                    var genderId = "Man";
+                };
+                if (entry[1] === "Other") {
+                    var genderId = "Non-binary";
+                };
+                if (entry[1] === "Changes") {
+                    var genderId = "Gender-fluid";
+                };
+                if (entry[1] === "Two") {
+                    var genderId = "Bi-gender";
+                };
+                if (entry[1] === "Agender") {
+                    var genderId = "Agender";
+                };
+                if (entry[1] === "Neutral") {
+                    var genderId = "Gender-Neutral";
+                };
+                document.getElementById("genderId").innerHTML = genderId;
+            }
+            var data = new FormData(qSex);
+            var output = "";
+
+            for (const entry of data) {
+                output = entry[0] + "=" + entry[1] + "\r";
+                var bioSex = entry[1];
+                if (entry[1] === "Female") {
+                    var bioSex = "Female";
+                };
+                if (entry[1] === "Male") {
+                    var bioSex = "Male";
+                };
+                if (entry[1] === "Other") {
+                    var bioSex = "Intersex";
+                };
+                document.getElementById("bioSex").innerHTML = bioSex;
+                document.getElementById("bioGender").innerHTML = genderId;
+                document.getElementById("gayExpression").innerHTML = genderEx;
+                document.getElementById("fuck").innerHTML = fuck;
+
+                if (bioSex === "Male" && genderId === "Man" || bioSex === "Female" && genderId === "Womyn") {
+                    var cisTrans = "Cis";
+                    document.getElementById("cistrans").innerHTML = cisTrans;
+                };
+                if (bioSex === "Male" && genderId === "Womyn" || bioSex === "Female" && genderId === "Man") {
+                    var cisTrans = "Transgender"
+                    document.getElementById("cistrans").innerHTML = cisTrans;
+                };
+
+                if (bioSex === "Intersex" && genderId === "Womyn" || bioSex === "Intersex" && genderId === "Man") {
+                    document.getElementById("cistrans").innerHTML = bioSex;
+                };
+                if (genderId === "Non-binary") {
+                    document.getElementById("cistrans").innerHTML = "";
+                }
+
+                if (sexuality === "Men" && genderId === "Man") {
+                    var gayStraight = "Gay";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+                if (sexuality === "Womyn" && genderId === "Womyn") {
+                    var gayStraight = "Lesbian";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+
+                if (sexuality === "Womyn" && genderId === "Man" || sexuality === "Men" && genderId === "Womyn") {
+                    var gayStraight = "Straight";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+
+                if (sexuality === "asexual") {
+                    document.getElementById("cistrans").innerHTML = "";
+                    document.getElementById("gayStraight").innerHTML = sexuality;
+                    document.getElementById("fuck").innerHTML = "";
+                };
+                if (sexuality === "Womyn" && genderId === "Womyn" && bioSex === "Male") {
+                    var gayStraight = "Transgender Lesbian";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                    document.getElementById("bioGender").innerHTML = "";
+                    document.getElementById("cistrans").innerHTML = "";
+
+                };
+                if (sexuality === "Men" && genderId === "Man" && bioSex === "Female") {
+                    var gayStraight = "Transgender Man";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                    document.getElementById("bioGender").innerHTML = "";
+                    document.getElementById("cistrans").innerHTML = "";
+                };             
+                if (sexuality === "Imparcial") {
+                    var gayStraight = "Pansexual";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+                if (sexuality === "Both") {
+                    var gayStraight = "Bisexual";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+                
+                if (sexuality === "All") {
+                    var gayStraight = "Omnisexual";
+                    document.getElementById("gayStraight").innerHTML = gayStraight;
+                };
+                if (cisTrans === "Cis" && genderEx === "Femme") {
+                    genderEx = "Feminine";
+                   
+                    document.getElementById("lesbianExpression").innerHTML = "";
+                    document.getElementById("gayExpression").innerHTML = genderEx;
+                };
+                if (cisTrans === "Cis" && genderEx === "Masc" ) {
+                    genderEx = "Masculine";
+                   
+                    document.getElementById("gayExpression").innerHTML = genderEx;
+                };
+                if (gayStraight === "Lesbian" && genderEx === "Masculine") {
+                    genderEx = "Butch";
+                    document.getElementById("gayExpression").innerHTML = genderEx;
+                   
+                };
+
+                if (genderId === "Gender-Neutral") {
+                    document.getElementById("gayExpression").innerHTML = "";
+                };
+                if ((bioSex === "Intersex" ||genderId === "Gender-Neutral" || genderId==="Agender"|| genderId==="Bi-gender"|| genderId==="Gender-fluid") && sexuality=== "Men" ){
+                    sexuality= "Androsexual";  
+                    document.getElementById("gayStraight").innerHTML = sexuality;
+                };
+                if ((bioSex === "Intersex" ||genderId === "Gender-Neutral" || genderId==="Agender"|| genderId==="Bi-gender"|| genderId==="Gender-fluid") && sexuality=== "Womyn" ){
+                    sexuality= "Gynesexual";
+                    document.getElementById("gayStraight").innerHTML = sexuality;
+                };
+            }
+            event.preventDefault();
+        }, false);
+
+    </script>
+    <div id="result">
+        <p>Biologically you are a: <span id="bioSex"> </span> psychologically you're<span id="genderId"></span><br>You
+            outwardly express yourself as: <span id="genderEx"> </span> and you're sexually attracted to: <span id="sexuality"></span></p>
+    </div>
+    <div id="final">
+
+        <p>You are a <span id=gayExpression></span> <span id=fuck></span> <span id=gayStraight></span> <span id=cistrans></span> <span id=bioGender>
+            </span> 
+        </p>
+
+    </div>
+</body>
+
+</html>
