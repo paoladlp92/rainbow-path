@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Rainbow Pride</title>
+
+    <title>The Rainbow Path</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,7 +17,9 @@
         <div class="row justify-content-center">
 
 
-            <h1>Rainbow Pride</h1>
+
+            <h1>The Rainbow Path</h1>
+
 
         </div>
         <div class="row justify-content-center">
@@ -23,7 +27,7 @@
 
         </div>
         <div class="row justify-content-center">
-            <img src="images/rainbowsnowflake.png" alt="rainbowflake" height="300px" style="margin-top:100px" >
+            <img src="images/rainbowpath2.png" alt="rainbowflake" height="300px" style="margin-top:100px" >
         </div>
         <p class="scroll">Scroll down to begin.</p>
         <div class="row justify-content-center">
@@ -35,9 +39,12 @@
     </div>
 
     <div class="container1">
+        <div class="row justify-content-center">
 
-
-        
+            <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="images/chromosomes.jpg" alt="Chromosomes" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title">What is your biological Sex?:</h5>
                     <form id=qSex>
                         <div>
                             <input type="radio" id="sex1" name="Biological Sex:" value="Female">
@@ -46,18 +53,19 @@
                             <input type="radio" id="sex2" name="Biological Sex:" value="Male">
                             <label for="sex2">b) Male</label><br>
 
-
+                            <input type="radio" id="sex3" name="Biological Sex:" value="Other">
+                            <label for="sex3">c) Other</label><br>
                         </div>
-                        
-                        
-                        
-                        
                         <div>
                             <button type="submit" id="submit1">Submit</button>
                         </div>
                     </form>
-              
-           
+                </div>
+            </div>
+                <div class="card" style="width: 15rem;">
+                        <img class="card-img-top" src="images/brain2.jpg" alt="brain" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">What is your Gender Identity?:</h5>
                         <form id=qGenderId>
                             <div>
                                 <input type="radio" id="genderId1" name="Gender Identity:" value="Womyn">
@@ -66,20 +74,50 @@
                                 <input type="radio" id="genderId2" name="Gender Identity:" value="Man">
                                 <label for="genderId2">b) Man</label><br>
 
+                                <input type="radio" id="genderId3" name="Gender Identity:" value="Other">
+                                <label for="genderId3">c) Other</label><br>
+                                <input type="radio" id="genderId4" name="Gender Identity:" value="Changes">
+                                <label for="genderId4">c) It fluctuates</label><br>
+                                <input type="radio" id="genderId5" name="Gender Identity:" value="Two">
+                                <label for="genderId5">d) I have two genders</label><br>
+                                <input type="radio" id="genderId6" name="Gender Identity:" value="Agender">
+                                <label for="genderId6">e) *Figuring it out* </label><br>
+                                <input type="radio" id="genderId7" name="Gender Identity:" value="Neutral">
+                                <label for="genderId7">e) Nothing in Particular. </label><br>
                         </form>
+                    </div>
+                </div>
 
-
+    </div>
    
+                    <div class="card" style="width: 15rem;">
+                            <img class="card-img-top" src="images/lesbian.png" alt="gay couplple" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Who are you sexually attracted to?:</h5>
                             <form id=qSexuality>
                                 <div>
                                     <input type="radio" id="sexuality1" name="Sexuality:" value="Womyn">
                                     <label for="sexuality1">a) Womyn</label><br>
                                     <input type="radio" id="sexuality2" name="Sexuality:" value="Men">
                                     <label for="sexuality2">b) Men</label><br>
+                                    <input type="radio" id="sexuality3" name="Sexuality:" value="Both">
+                                    <label for="sexuality3">c) Both womyn and men</label><br>
+                                    <input type="radio" id="sexuality4" name="Sexuality:" value="Non">
+                                    <label for="sexuality4">D) Non</label><br>
+                                    <input type="radio" id="sexuality5" name="Sexuality:" value="Imparcial">
+                                    <label for="sexuality5">E) Gender is not relevant</label><br>
+                                    <input type="radio" id="sexuality6" name="Sexuality:" value="All">
+                                    <label for="sexuality6">F) Multiple</label><br>
+
 
                                 </div>
                             </form>
-                     
+                        </div>
+                    </div>
+                        <div class="card" style="width: 15rem;">
+                                <img class="card-img-top" src="images/humza.png" alt="Humza" height="200px">
+                            <div class="card-body">
+                                <h5 class="card-title">What is your Gender Expression?:</h5>
                                 <form id=qGenderEx>
                                     <div>
                                         <input type="radio" id="genderEx1" name="Gender Expression:" value="Feminine">
@@ -88,11 +126,19 @@
                                         <input type="radio" id="genderEx2" name="Gender Expression:" value="Masculine">
                                         <label for="genderEx2">b) Masculine/Masc</label><br>
 
+                                        <input type="radio" id="genderEx3" name="Gender Expression:" value="Other">
+                                        <label for="genderEx3">c) Other</label><br>
+                                        <input type="radio" id="genderEx4" name="Gender Expression:" value="Non">
+                                        <label for="genderEx4">D) Non</label><br>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
 
+                        </div>
                     
                 </div>
+            </div>
             <script type="text/javascript">
                 // justify-content-start
                 // <div class="col-12 col-xl-8 offset-xl-1"> </div>
@@ -104,16 +150,13 @@
                 var cisTrans = "";
                 var gayStraight = "";
                 var queerEx = "";
-                //var fuck = "";
                 form.addEventListener("submit", function (event) {
                     document.getElementById("bioSex").innerHTML = "";
                     document.getElementById("bioGender").innerHTML = "";
                     document.getElementById("gayExpression").innerHTML = "";
-                    //document.getElementById("fuck").innerHTML = "";
                     document.getElementById("sexuality").innerHTML = "";
                     document.getElementById("genderEx").innerHTML = "";
                     document.getElementById("genderId").innerHTML = "";
-
                     var data = new FormData(qSexuality);
                     var output = "";
                     for (const entry of data) {
@@ -199,7 +242,6 @@
                         document.getElementById("bioGender").innerHTML = genderId;
                         document.getElementById("gayExpression").innerHTML = genderEx;
                         document.getElementById("gayStraight").innerHTML = gayStraight;
-                        //document.getElementById("fuck").innerHTML = fuck;
                         if (bioSex === "Male" && genderId === "Man" || bioSex === "Female" && genderId === "Womyn") {
                             var cisTrans = "Cis";
                             document.getElementById("cistrans").innerHTML = cisTrans;
@@ -228,23 +270,7 @@
                         };
                         if (sexuality === "asexual") {
                             document.getElementById("gayStraight").innerHTML = sexuality;
-                            //document.getElementById("fuck").innerHTML = "";
                         };
-/*
-                        if (sexuality === "Womyn" && genderId === "Womyn" && bioSex === "Male") {
-                            var gayStraight = "Lesbian";
-                            document.getElementById("gayStraight").innerHTML = gayStraight;
-                            document.getElementById("bioGender").innerHTML = "";
-                            //document.getElementById("cistrans").innerHTML = "";
-                        };
-*//*
-                        if (sexuality === "Men" && genderId === "Man" && bioSex === "Female") {
-                            var gayStraight = "Transgender Man";
-                            document.getElementById("gayStraight").innerHTML = gayStraight;
-                            document.getElementById("bioGender").innerHTML = "";
-                            document.getElementById("cistrans").innerHTML = "";
-                        };
-                        */
                         if (sexuality === "Imparcial") {
                             var gayStraight = "Pansexual";
                             document.getElementById("gayStraight").innerHTML = gayStraight;
@@ -269,11 +295,6 @@
                             genderEx = "Butch";
                             document.getElementById("gayExpression").innerHTML = genderEx;
                         };
-                        /*
-                                            if (genderId === "Genderfree") {
-                                                document.getElementById("gayExpression").innerHTML = "";
-                                            };
-                                            */
                         if ((bioSex === "Intersex" || genderId === "Gender-Neutral" || genderId === "Agender" || genderId === "Bi-gender" || genderId === "Gender-fluid"|| genderId === "Non-binary") && sexuality === "Men") {
                             sexuality = "Androsexual";
                             document.getElementById("gayStraight").innerHTML = sexuality;
@@ -313,9 +334,9 @@
             
                     <div class="card" style="width: 29rem;"id="cardFinal">
                             <div class="card-body">
-                                <h5 class="card-title">You are:</h5>
+                                <h5 class="card-title">Words that best describe you:</h5>
                     <div id="final">
-                        <p><span id=gayExpression></span><!--  <span id=fuck></span>--> <span id=gayStraight></span>
+                        <p><span id=gayExpression></span> <span id=gayStraight></span>
                             <span id=cistrans></span>
                             <span id=bioGender>
                             </span>
@@ -328,4 +349,9 @@
     </div>
 
 
+
+
+
 </body>
+
+</html>
